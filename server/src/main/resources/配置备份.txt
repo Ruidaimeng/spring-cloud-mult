@@ -1,0 +1,42 @@
+server:
+  port: 8083
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka/
+env: test5
+
+spring:
+  application:
+    name: producer
+  cloud:
+    stream:
+          bindings:
+            myMessage:        #<span style="font-family: Arial, Helvetica, sans-serif;">position1。</span><span style="font-family: Arial, Helvetica, sans-serif;">channelName.</span>
+              destination: modest #position2。destination，或者可以认为是发布－订阅模型里面的topic，这里应该与输出app中发布的topic一致，表示订阅该主题
+              binder: rabbit1
+            myMessage:       #channelName
+              destination: mydest #destination，或者可以认为是发布－订阅模型里面的topic
+              binder: rabbit1
+
+          binders:
+            rabbit1:
+              type: rabbit     #可以是其它，比如kafka
+              environment:
+                spring:
+                  rabbitmq:
+                    host: 140.143.242.234   #rabbitMQ服务器地址
+                    port: 5672          #rabbitMQ服务器端口
+                    username: test
+                    password: 123456
+
+  #rabbitmq:
+  #      host: 140.143.242.234
+  #      port: 5672
+  #      username: test
+  #      password: 123456
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka/

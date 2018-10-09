@@ -1,0 +1,21 @@
+server:
+  port: 8083
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka/
+env: test5
+
+spring:
+  application:
+    name: producer
+  rabbitmq:
+        host: 140.143.242.234
+        port: 5672
+        username: test
+        password: 123456
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka/
