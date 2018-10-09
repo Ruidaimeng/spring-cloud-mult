@@ -20,7 +20,7 @@ spring:
           username: rmkdzdnpy
           password: rm82647826
           #本地存放从git上拉取的配置文件的位置
-          basedir: G:\IdeaProjects\spring-cloud-mult\basedir
+          basedir: E:\IdeaCode4cloud\IdeaProjects\spring-cloud-mult\basedir
 
 
 

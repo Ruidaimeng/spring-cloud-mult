@@ -24,6 +24,7 @@ public class SendMessgaeController {
 
     @GetMapping("/sendMessage")
     public void process(){
+        System.out.println("========发送消息");
         streamClient.output().send(
                 MessageBuilder.withPayload("now"+new Date()).build()
         );

@@ -1,3 +1,4 @@
+#从配置中心获取，配置文件内容，拉取到本地，并实时更新
 spring:
   application:
     name: producer
