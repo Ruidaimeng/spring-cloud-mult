@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
  * @author ruimeng
  * @create 2018-10-08 19:47
  **/
-@Component
-@EnableBinding(StreamClient.class)
+//@Component
+//@EnableBinding(StreamClient.class)
 public class StreamReceiver {
 
     //消息接受端
