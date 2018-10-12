@@ -6,6 +6,7 @@ import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.SubscribableChannel;
 
 /*
+ *使用stream,发送和获取消息
 * */
 
 public interface StreamClient  {
