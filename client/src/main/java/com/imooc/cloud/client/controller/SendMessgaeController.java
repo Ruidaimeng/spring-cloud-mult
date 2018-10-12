@@ -1,7 +1,6 @@
-package com.imooc.cloud.server.controller;
+package com.imooc.cloud.client.controller;
 
-import com.imooc.cloud.server.message.StreamClient;
-
+import com.imooc.cloud.client.message.StreamClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.web.bind.annotation.GetMapping;

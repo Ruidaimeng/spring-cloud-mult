@@ -9,6 +9,11 @@ env: test5
 spring:
   application:
     name: producer
+  stream:
+        bindings:
+          myMessage:
+            group: order
+            content-type: application/json
   rabbitmq:
         host: 140.143.242.234
         port: 5672
