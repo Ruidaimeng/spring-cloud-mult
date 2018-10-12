@@ -14,6 +14,7 @@ import java.util.Date;
  *
  * @author ruimeng
  * @create 2018-10-07 16:26
+ * rabbitMQ 发送消息
  **/
 
 
