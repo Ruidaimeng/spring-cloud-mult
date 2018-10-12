@@ -10,7 +10,7 @@ import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.messaging.handler.annotation.SendTo;
 
 
-@EnableBinding(value = {MyProcessor.class})
+@EnableBinding(value = {MyProcessor.class})  //绑定接口，绑定到消息代理接口
 public class MyProcessorReceiver {
 
     /*@StreamListener(MyProcessor.OUTPUT1)
